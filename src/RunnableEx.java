@@ -1,0 +1,1 @@
+public class RunnableEx implements Runnable {    @Override    public void run(){        System.out.println("Runnable....");    }    public static void main(String[] args) {        Runnable runnable = new RunnableEx();        Thread t1 = new Thread(runnable);        t1.start();    }}
